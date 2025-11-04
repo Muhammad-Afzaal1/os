@@ -4,10 +4,9 @@
 
 int main(){
     srand(time(NULL));
-    int random_number1 = rand();
-    int random_number2 = rand();
-    int num = rand();
-    printf("Random number 1 : %d\n", random_number1);
-    printf("Random number 2: %d\n", random_number2);
+    int min = 0;
+    int max = 100;
+    int randomNumberInRange = (rand() % (max-min +1) + min);
+    printf("min: %d max: %d Random Number: %d\n", min, max, randomNumberInRange);
     return 0;
 }
